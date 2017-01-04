@@ -8,20 +8,20 @@ activity/act - Activity description (Laying, Sitting, Standing, Walking, Walking
 
 66 variables being measured that are a mean or standard deviation. The naming of these variables can be found here:
 
-1) Time/Frequency:
-   *  'frequency' indicates the variable was measured in the frequency domain using a Fast Fourier Transform (FFT) of a corresponding time domain variable
-   *  'time' indicates the variable was measured in the time domain
-2) Body/Gravity Component:
-   *  Variables containing just "BodyAccelerometer" indicate it is the body acceleration signal
-   *  Variables containing just "GravityAccelerometer" indicate it is the gravity acceleration signal
-3) Jerk:
-   * "BodyAccelerometerJerk" indicates it's the Jerk signal derived from the body linear acceleration and angular velocity
-4) Magnitude:
-   * "AccelerometerMagnitude" means it's a measurement of the magnitude of the 3D signal calculated using the Euclidean norm 
-5) Mean / Standard Deviation:
-   * 'mean()' shows this concerns a mean value.
-   *'std()' shows that this concerns a standard deviation.
-6) Variables containing 'X', 'Y', or 'Z' indicate the axial direction. 
+- Time/Frequency:
+     'frequency' indicates the variable was measured in the frequency domain using a Fast Fourier Transform (FFT) of a corresponding time domain variable
+     'time' indicates the variable was measured in the time domain
+- Body/Gravity Component:
+     Variables containing just "BodyAccelerometer" indicate it is the body acceleration signal
+     Variables containing just "GravityAccelerometer" indicate it is the gravity acceleration signal
+- Jerk:
+    "BodyAccelerometerJerk" indicates it's the Jerk signal derived from the body linear acceleration and angular velocity
+- Magnitude:
+    "AccelerometerMagnitude" means it's a measurement of the magnitude of the 3D signal calculated using the Euclidean norm 
+- Mean / Standard Deviation:
+    'mean()' shows this concerns a mean value.
+    'std()' shows that this concerns a standard deviation.
+- Variables containing 'X', 'Y', or 'Z' indicate the axial direction. 
 
 
 ==========================================================================
