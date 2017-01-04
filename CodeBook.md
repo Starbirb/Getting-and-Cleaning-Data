@@ -7,9 +7,10 @@ subject/sub - Subject identification number (values from 1 to 30)
 activity/act - Activity description (Laying, Sitting, Standing, Walking, Walking_Downstairs, Walking_Upstairs)
 
 66 variables being measured that are a mean or standard deviation. The naming of these variables can be found here:
+
    1) Time/Frequency:
-   *  'frequency' indicates the variable was measured in the frequency domain using a Fast Fourier Transform (FFT) of a corresponding time domain variable
-   *  'time' indicates the variable was measured in the time domain
+   *  'frequency' indicates the variable was measured in the frequency domain using a Fast Fourier Transform (FFT) of a corresponding time domain variable
+   *  'time' indicates the variable was measured in the time domain
 
    2) Body/Gravity Component:
    *  Variables containing just "BodyAccelerometer" indicate it is the body acceleration signal
@@ -34,11 +35,9 @@ Codebook Notes
 
 Every feature in this dataset comes from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. 
 
-The time domain signals were captured at a constant rate of 50 Hz. 
+Time signals were captured at a constant rate of 50 Hz. Next, they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. 
+Similarly, the acceleration signal was then separated into body and gravity acceleration signals using another low pass Butterworth filter this time with a corner frequency of 0.3 Hz. 
 
-Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. 
-Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter this time with a corner frequency of 0.3 Hz. 
-
-Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm. 
+The body linear acceleration and angular velocity were then derived in time to obtain Jerk signals. Also, the magnitude of these three-dimensional signals was calculated using the Euclidean norm. 
 
 Fast Fourier Transform (FFT) was applied to some of these signals.
